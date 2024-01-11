@@ -1,0 +1,41 @@
+{
+    "fileName": "id_1704953384287_348_propertyChange",
+    "fileType": "change",
+    "changeType": "propertyChange",
+    "moduleName": "",
+    "reference": "ns.fiorielements",
+    "packageName": "",
+    "content": {
+        "property": "alwaysShowContentHeader",
+        "newValue": true
+    },
+    "selector": {
+        "id": "ns.fiorielements::sap.suite.ui.generic.template.ObjectPage.view.Details::People--objectPage",
+        "idIsLocal": false,
+        "type": "sap.uxap.ObjectPageLayout"
+    },
+    "layer": "CUSTOMER_BASE",
+    "texts": {},
+    "namespace": "apps/ns.fiorielements/changes/",
+    "projectId": "",
+    "creation": 1704953384287,
+    "originalLanguage": "",
+    "support": {
+        "generator": "changeUtils: SAPFioriTools",
+        "service": "",
+        "user": "",
+        "sapui5Version": "1.120.4",
+        "sourceChangeFileName": "",
+        "compositeCommand": ""
+    },
+    "oDataInformation": {},
+    "dependentSelector": {},
+    "validAppVersions": {
+        "from": "0.0.1",
+        "to": "0.0.1",
+        "creation": "0.0.1"
+    },
+    "jsOnly": false,
+    "variantReference": "",
+    "appDescriptorChange": false
+}

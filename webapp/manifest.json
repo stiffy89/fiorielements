@@ -101,6 +101,30 @@
             "config": {},
             "routes": [],
             "targets": {}
+        },
+        "extends": {
+            "extensions": {
+                "sap.ui.controllerExtensions": {
+                    "sap.suite.ui.generic.template.ObjectPage.view.Details": {
+                        "controllerName": "ns.fiorielements.ext.controller.ObjectPageExt",
+                        "sap.ui.generic.app": {
+                            "People": {
+                                "EntitySet": "People",
+                                "Header": {
+                                    "Actions": {
+                                        "testaction": {
+                                            "id": "deleteButton",
+                                            "text": "Delete",
+                                            "press": "Delete",
+                                            "requiresSelection": false
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
         }
     },
     "sap.ui.generic.app": {
@@ -125,6 +149,9 @@
                             "dateSettings": {
                                 "useDateRange": true
                             }
+                        },
+                        "dataLoadSettings": {
+                            "loadDataOnAppLaunch": "always"
                         }
                     }
                 },
