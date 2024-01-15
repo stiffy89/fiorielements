@@ -7,15 +7,15 @@
                     <PropertyRef Name="PersonId"/>
                 </Key>
                 <Property Name="PersonId" Type="Edm.String" Nullable="false" MaxLength="3" sap:unicode="false" sap:label="Dummy" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
-                <Property Name="FirstName" Type="Edm.String" Nullable="false" MaxLength="40" sap:unicode="false" sap:label="Text, 40 Characters Long" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
-                <Property Name="LastName" Type="Edm.String" Nullable="false" MaxLength="40" sap:unicode="false" sap:label="Text, 40 Characters Long" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
+                <Property Name="FirstName" Type="Edm.String" Nullable="false" MaxLength="40" sap:unicode="false" sap:label="Text, 40 Characters Long" sap:creatable="true" sap:updatable="true" sap:sortable="false" sap:filterable="true"/>
+                <Property Name="LastName" Type="Edm.String" Nullable="false" MaxLength="40" sap:unicode="false" sap:label="Text, 40 Characters Long" sap:creatable="true" sap:updatable="true" sap:sortable="false" sap:filterable="false"/>
                 <Property Name="StartDate" Type="Edm.DateTime" Precision="7" sap:unicode="false" sap:label="Date" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
                 <Property Name="EndDate" Type="Edm.DateTime" Precision="7" sap:unicode="false" sap:label="Date" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
                 <Property Name="HeightCm" Type="Edm.Int32" Nullable="false" sap:unicode="false" sap:label="Integer" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
                 <Property Name="ImageBase64" Type="Edm.String" Nullable="false" sap:unicode="false" sap:label="IMAGE_BASE64" sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/>
             </EntityType>
             <EntityContainer Name="Z_CRUD_TST_SRV_Entities" m:IsDefaultEntityContainer="true" sap:supported-formats="atom json xlsx">
-                <EntitySet Name="People" EntityType="Z_CRUD_TST_SRV.Person" sap:creatable="false" sap:updatable="false" sap:deletable="false" sap:pageable="false" sap:content-version="1"/>
+                <EntitySet Name="People" EntityType="Z_CRUD_TST_SRV.Person" sap:creatable="true" sap:updatable="true" sap:deletable="true" sap:pageable="false" sap:content-version="1"/>
             </EntityContainer>
             <atom:link rel="self" href="https://dev.fire.nsw.gov.au:443/sap/opu/odata/sap/Z_CRUD_TST_SRV/$metadata" xmlns:atom="http://www.w3.org/2005/Atom"/>
             <atom:link rel="latest-version" href="https://dev.fire.nsw.gov.au:443/sap/opu/odata/sap/Z_CRUD_TST_SRV/$metadata" xmlns:atom="http://www.w3.org/2005/Atom"/>

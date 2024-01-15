@@ -53,7 +53,7 @@
         }
     },
     "sap.ui5": {
-        "flexEnabled": true,
+        "flexEnabled": false,
         "dependencies": {
             "minUI5Version": "1.120.4",
             "libs": {
@@ -106,21 +106,35 @@
             "extensions": {
                 "sap.ui.controllerExtensions": {
                     "sap.suite.ui.generic.template.ObjectPage.view.Details": {
-                        "controllerName": "ns.fiorielements.ext.controller.ObjectPageExt",
-                        "sap.ui.generic.app": {
-                            "People": {
-                                "EntitySet": "People",
-                                "Header": {
-                                    "Actions": {
-                                        "testaction": {
-                                            "id": "deleteButton",
-                                            "text": "Delete",
-                                            "press": "Delete",
-                                            "requiresSelection": false
-                                        }
-                                    }
-                                }
+                        "controllerName" : "ns.fiorielements.ext.controller.ObjectPageExt"
+                    }
+                },
+                "sap.ui.viewExtensions": {
+                    "sap.suite.ui.generic.template.ObjectPage.view.Details": {
+                        "SmartFormExtension|People|personalinformation": {
+                            "className": "sap.ui.core.Fragment",
+                            "fragmentName": "ns.fiorielements.ext.fragments.startdateGroupElement",
+                            "type": "XML"
+                        },
+                        "AfterFacet|People|personalinformation": {
+                            "className": "sap.ui.core.Fragment",
+                            "fragmentName": "ns.fiorielements.ext.fragment.CustomForm",
+                            "type": "XML",
+                            "sap.ui.generic.app": {
+                                "title": "Custom Form"
                             }
+                        }
+                    },
+                    "sap.suite.ui.generic.template.ListReport.view.ListReport": {
+                        "ResponsiveTableColumnsExtension|People": {
+                            "className": "sap.ui.core.Fragment",
+                            "fragmentName": "ns.fiorielements.ext.fragments.ResponsiveTableColumns",
+                            "type": "XML"
+                        },
+                        "ResponsiveTableCellsExtension|People": {
+                            "className": "sap.ui.core.Fragment",
+                            "fragmentName": "ns.fiorielements.ext.fragments.ResponsiveTableCells",
+                            "type": "XML"
                         }
                     }
                 }

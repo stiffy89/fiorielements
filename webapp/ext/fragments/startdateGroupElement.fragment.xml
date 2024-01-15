@@ -1,0 +1,17 @@
+<core:FragmentDefinition xmlns:sfi="sap.ui.comp.smartfield" xmlns:core="sap.ui.core" xmlns="sap.m" xmlns:sfo="sap.ui.comp.smartform">
+<sfo:GroupElement>
+    <sfo:label>
+        <Label text='Custom Start Date'/>
+    </sfo:label>
+    <sfo:elements>
+        <Text text="{
+            path: 'StartDate',
+            formatter: '.extension.ns.fiorielements.ext.controller.ObjectPageExt.DateFormatter'
+        }"/>
+        <Button 
+            text='Delete'
+            press='.extension.ns.fiorielements.ext.controller.ObjectPageExt.Delete'
+        />
+    </sfo:elements>
+</sfo:GroupElement>
+</core:FragmentDefinition>
