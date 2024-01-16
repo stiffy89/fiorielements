@@ -1,7 +1,7 @@
 <core:FragmentDefinition xmlns:core="sap.ui.core" xmlns="sap.m"
 	xmlns:l="sap.ui.layout">
 	<l:VerticalLayout >
-		<Label text='Custom Form Element'/>
-		<Text text="Custom Form" />
+		<Label text='Custom Form Element1'/>
+		<Text text="Test Custom Form 1" />
 	</l:VerticalLayout>
 </core:FragmentDefinition>

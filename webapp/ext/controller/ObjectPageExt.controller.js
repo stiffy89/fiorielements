@@ -5,9 +5,10 @@ sap.ui.define([
     'use strict';
 
     return ControllerExtension.extend('ns.fiorielements.ext.controller.ObjectPageExt', {
-        TimeElapsedFormatter: function (source){
-            console.log(source);
-            return "";
+        TimeElapsedFormatter: function (sStartDate, sEndDate){
+            let timeDiff = new Date(sEndDate) - new Date(sStartDate);
+            let dayDiff = Math.ceil(timeDiff / (1000 * 60 * 60 * 24));
+            return dayDiff + " days";
         }
     }) 
 });

@@ -9,7 +9,7 @@
                 {path:'StartDate'},
                 {path: 'EndDate'}
             ],
-            formatter : '.extension.ns.fiorielements.ext.controller.ObjectPageExt.TimeElapsedFormatted'
+            formatter : '.extension.ns.fiorielements.ext.controller.ObjectPageExt.TimeElapsedFormatter'
         }"/>
     </sfo:elements>
 </sfo:GroupElement>

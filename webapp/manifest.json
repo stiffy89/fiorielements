@@ -124,7 +124,16 @@
                             "fragmentName": "ns.fiorielements.ext.fragment.CustomForm",
                             "type": "XML",
                             "sap.ui.generic.app": {
-                                "title": "Custom Form"
+                                "title": "Custom Form 0"
+                            }
+                        },
+                        "AfterFacet|People|personalinformation|1": {
+                            "className": "sap.ui.core.Fragment",
+                            "fragmentName": "ns.fiorielements.ext.fragment.CustomForm",
+                            "type": "XML",
+                            "sap.ui.generic.app": {
+                                "title": "Custom Form 1",
+                                "key": "1"
                             }
                         }
                     },
