@@ -5,16 +5,9 @@ sap.ui.define([
     'use strict';
 
     return ControllerExtension.extend('ns.fiorielements.ext.controller.ObjectPageExt', {
-        
-        Delete: function(oEvent) {
-            MessageToast.show("Custom handler invoked.");
-        },
-        DateFormatter: function (source) {
-            if (source){
-                return new Date(source).toDateString();
-            } else {
-                return source
-            }
+        TimeElapsedFormatter: function (source){
+            console.log(source);
+            return "";
         }
     }) 
 });

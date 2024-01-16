@@ -1,17 +1,16 @@
 <core:FragmentDefinition xmlns:sfi="sap.ui.comp.smartfield" xmlns:core="sap.ui.core" xmlns="sap.m" xmlns:sfo="sap.ui.comp.smartform">
 <sfo:GroupElement>
     <sfo:label>
-        <Label text='Custom Start Date'/>
+        <Label text='Days Elapsed'/>
     </sfo:label>
     <sfo:elements>
         <Text text="{
-            path: 'StartDate',
-            formatter: '.extension.ns.fiorielements.ext.controller.ObjectPageExt.DateFormatter'
+            parts: [
+                {path:'StartDate'},
+                {path: 'EndDate'}
+            ],
+            formatter : '.extension.ns.fiorielements.ext.controller.ObjectPageExt.TimeElapsedFormatted'
         }"/>
-        <Button 
-            text='Delete'
-            press='.extension.ns.fiorielements.ext.controller.ObjectPageExt.Delete'
-        />
     </sfo:elements>
 </sfo:GroupElement>
 </core:FragmentDefinition>

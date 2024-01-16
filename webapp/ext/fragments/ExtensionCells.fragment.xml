@@ -1,0 +1,10 @@
+<core:FragmentDefinition xmlns:core="sap.ui.core" xmlns="sap.m">
+    <Text text="{
+        path : 'StartDate',
+        formatter : '.extension.ns.fiorielements.ext.controller.ListReportPageExt.DateFormatter'
+    }"></Text>
+    <Text text="{
+        path : 'EndDate',
+        formatter : '.extension.ns.fiorielements.ext.controller.ListReportPageExt.DateFormatter'
+    }"></Text>
+</core:FragmentDefinition>

@@ -107,6 +107,9 @@
                 "sap.ui.controllerExtensions": {
                     "sap.suite.ui.generic.template.ObjectPage.view.Details": {
                         "controllerName" : "ns.fiorielements.ext.controller.ObjectPageExt"
+                    },
+                    "sap.suite.ui.generic.template.ListReport.view.ListReport": {
+                        "controllerName" : "ns.fiorielements.ext.controller.ListReportPageExt"
                     }
                 },
                 "sap.ui.viewExtensions": {
@@ -128,13 +131,15 @@
                     "sap.suite.ui.generic.template.ListReport.view.ListReport": {
                         "ResponsiveTableColumnsExtension|People": {
                             "className": "sap.ui.core.Fragment",
-                            "fragmentName": "ns.fiorielements.ext.fragments.ResponsiveTableColumns",
-                            "type": "XML"
+                            "fragmentName": "ns.fiorielements.ext.fragments.ExtensionColumns",
+                            "type": "XML",
+                            "id": "StartDate"
                         },
                         "ResponsiveTableCellsExtension|People": {
                             "className": "sap.ui.core.Fragment",
-                            "fragmentName": "ns.fiorielements.ext.fragments.ResponsiveTableCells",
-                            "type": "XML"
+                            "fragmentName": "ns.fiorielements.ext.fragments.ExtensionCells",
+                            "type": "XML",
+                            "id": "StartDate"
                         }
                     }
                 }
